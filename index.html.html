@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11 Meses Contigo 💖</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Great+Vibes&family=Dancing+Script:wght@700&display=swap');
+        
+        body {
+            text-align: center;
+            background: url('https://img.freepik.com/vector-gratis/feliz-dia-san-valentin-corazones-brillantes-fondo-espacio-texto_1017-23191.jpg?semt=ais_hybrid') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Dancing Script', cursive;
+            padding: 20px;
+            position: relative;
+            color: #fff4f4;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+        h1 {
+            font-size: 4rem;
+            margin-top: 50px;
+            font-weight: bold;
+            color: #ffdde1;
+        }
+        .question {
+            font-size: 2.5rem;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #ffd6e0;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #ff4081;
+            color: white;
+            padding: 15px 30px;
+            font-size: 2rem;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.3s;
+            font-family: 'Great Vibes', cursive;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .btn:hover {
+            background-color: #e91e63;
+        }
+        .poema {
+            padding: 25px;
+            border-radius: 20px;
+            display: none;
+            margin-top: 20px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 2rem;
+            color: #fff0f5;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .message {
+            font-size: 2.2rem;
+            margin-top: 30px;
+            font-weight: bold;
+            color: #ffebf2;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
+            .question { font-size: 2rem; }
+            .btn { font-size: 1.8rem; padding: 12px 25px; }
+            .poema { max-width: 90%; font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Feliz 11 meses, mi amor eterno! 💕</h1>
+    <p class="question">¿Quieres seguir escribiendo esta hermosa historia juntos? 💖</p>
+    <div class="buttons">
+        <button class="btn" onclick="mostrarPoema()">Sí, por toda la eternidad 💘</button>
+    </div>
+    <p class="message">Cada día contigo es una bendición, un nuevo capítulo de amor y felicidad. Eres mi inspiración, mi alegría y el mejor regalo que la vida me ha dado. 💖</p>
+    <div class="poema" id="poema">
+        <p>
+            "Eres la melodía que alegra mis días,<br>
+            La estrella que brilla en mis noches más frías.<br>
+            Tu risa es mi sol, tu amor mi fortuna,<br>
+            Contigo la vida es un cielo de luna."<br><br>
+            Cada día contigo es un milagro, un hermoso sueño hecho realidad.<br>
+            En cada mirada tuya encuentro mi hogar, mi refugio y mi paz.<br>
+            Gracias por estos 11 meses llenos de risas, abrazos y momentos inolvidables.<br>
+            Eres mi todo, mi amor eterno, la dueña de mi corazón.<br><br>
+            Te amo con todo mi ser, mi niña linda Indira, mi Sari 💖💖💖
+        </p>
+        <button class="btn" onclick="mostrarMensaje()">¿De verdad quisieras pasar tu futuro conmigo? 💍</button>
+        <p id="mensaje" style="display: none; font-size: 2rem; margin-top: 20px; color: #fff0f5;">Yo sí espero pasar nuestro futuro juntos, vivir los dos solos y poder estar juntos mejorando. Solamente quiero que seas tú... 💖💖💖</p>
+    </div>
+    <script>
+        function mostrarPoema() {
+            document.getElementById('poema').style.display = 'block';
+            document.getElementById('poema').scrollIntoView({ behavior: 'smooth' });
+        }
+        function mostrarMensaje() {
+            document.getElementById('mensaje').style.display = 'block';
+            document.getElementById('mensaje').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
